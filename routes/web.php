@@ -4,11 +4,13 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-
+Route::get('/add-location', function () {
+    return view('vendor-location');
+})->name('pagal');
 
 // Route::get('/save-location', [LocationController::class, 'store']);
 // Route::get('/get-locations', [LocationController::class, 'getLocations']);
@@ -25,6 +27,6 @@ Route::post('/save-shop', [ShopController::class, 'store']);
 Route::get('/get-shops', [ShopController::class, 'getShops']);
 
 // वेंडर का लोकेशन पेज दिखाने के लिए
-Route::get('/', function () {
-    return view('vendor-location');
-});
+// Route::get('/', function () {
+//     return view('vendor-location');
+// });
