@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/add-location', function () {
     return view('vendor-location');
-})->name('pagal');
+})->name('location');
 
 // Route::get('/save-location', [LocationController::class, 'store']);
 // Route::get('/get-locations', [LocationController::class, 'getLocations']);
