@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body> 
 
     <div class="top-right">
         <div class="icon-container">
